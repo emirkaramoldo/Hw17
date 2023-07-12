@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/button_background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Intents"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/to_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:gravity="center"
+            android:background="@drawable/edittext_background_normal"
+            android:paddingStart="12dp"
+            android:drawableStart="@drawable/ic_email_gray"
+            android:drawablePadding="8dp"
+            android:textColorHint="#808080"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="6dp"
+            />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject"
+            android:gravity="center"
+            android:background="@drawable/edittext_background_normal"
+            android:paddingStart="12dp"
+            android:drawableStart="@drawable/ic_subject_gray"
+            android:drawablePadding="8dp"
+            android:textColorHint="#808080"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="6dp"
+
+            />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message"
+            android:gravity="center"
+            android:background="@drawable/edittext_background_normal"
+            android:paddingStart="12dp"
+            android:drawableStart="@drawable/ic_message_gray"
+            android:drawablePadding="8dp"
+            android:textColorHint="#808080"
+            android:textSize="16sp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="6dp"
+            />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/send"
+            android:background="@drawable/button_background"
+            android:layout_marginHorizontal="20dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
